@@ -23,3 +23,22 @@ senao
 fimse
 Fimalgoritmo
 
+
+// operadores lógicos
+// + somar(concatenar)
+// - subtrair
+// * multiplicação
+// /divisão
+// % resto da divisão
+// ** exponenciação
+// > maior
+// < menor
+// = igual (em outras linguagens ==)
+// >= maior ou igual
+// <= menor ou igual
+// <> diferença (!=)
+
+// operadores relacionais
+// e (&&)
+// ou (||)
+//
