@@ -15,6 +15,8 @@ BoloNoPote <- 10,00
 CopoDaFelicidade <- 15,00
 Docinho <- 3,00
 Pudim <- 25,00
+
+
 escreval("***********Catálogo***********")
 escreval("1 - TRUFA                  R$ 8,00")
 escreval("2 - BOLO NO POTE           R$ 10,00")
@@ -24,7 +26,6 @@ escreval("5 - PUDIM                  R$ 25,00")
 escreval("6 - CANCELAR")
 escreval("7 - CARRINHO")
 
-para(opcao<6)faca
    leia(opcao)
    escolha(opcao)
       caso "1"
@@ -69,9 +70,5 @@ para(opcao<6)faca
       outrocaso
          escreval("Opção Inválida!")
    quantidade <- 0
-fimescolha
-fimalgoritmo
-
-//saída
 
 Fimalgoritmo
