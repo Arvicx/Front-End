@@ -26,6 +26,7 @@ escreval("5 - PUDIM                  R$ 25,00")
 escreval("6 - CANCELAR")
 escreval("7 - CARRINHO")
 
+
    leia(opcao)
    escolha(opcao)
       caso "1"
@@ -69,6 +70,6 @@ escreval("7 - CARRINHO")
          escreval("Total da Compra: R$",valorTotal)
       outrocaso
          escreval("Opção Inválida!")
+   fimescolha
    quantidade <- 0
-
 Fimalgoritmo
