@@ -5,9 +5,23 @@ Algoritmo "DocesVamp"
 
 
 Var
-opcao : caractere
+opcao, nomedoproduto : caractere
 valorTotal,Trufa,BoloNoPote,CopoDaFelicidade,Docinho,Pudim : real
 quantidade : inteiro
+
+//inicio adicionarcarrinho
+procedimento adicionarAoCarrinho(vp: real)
+   VAR
+      nomep : caractere
+   INICIO
+   escreval("Quantos(as) ",nomedoproduto," gostaria de adicionar?")
+   leia(quantidade)
+   escreval(quantidade," ",nomedoproduto, " adicionados(as)!")
+   valorTotal <- valorTotal+(vp*quantidade)
+   escreval("Subtotal: ",valorTotal)
+fimprocedimento
+//fim adicionarcarrinho
+
 Inicio
 //entrada
 Trufa <- 8,00
@@ -29,46 +43,27 @@ escreval("7 - CARRINHO")
    leia(opcao)
    escolha(opcao)
       caso "1"
-         escreval("Quantas Trufas gostaria de comprar?")
-         leia(quantidade)
-         escreva("Você adicionou ",quantidade)
-         escreval(" Trufa(s) ao carrinho!")
-         valorTotal <- valorTotal+(Trufa*quantidade)
-         escreval("Subtotal: ",valorTotal)
+         nomedoproduto <- "Trufa(s)"
+         adicionarAoCarrinho(trufa)
       caso "2"
-         escreval("Quantos Bolos no Pote gostaria de comprar?")
-         leia(quantidade)
-         escreva("Você adicionou ",quantidade)
-         escreval(" Bolo(s) no Pote ao carrinho!")
-         valorTotal <- valorTotal+(BoloNoPote*quantidade)
-         escreval("Subtotal: ",valorTotal)
+         nomedoproduto <- "Bolo(s) no Pote"
+         adicionarAoCarrinho(BoloNoPote)
       caso "3"
-         escreval("Quantos Copos da Felicidade gostaria de comprar?")
-         leia(quantidade)
-         escreva("Você adicionou ",quantidade)
-         escreval(" Copo(s) da Felicidade ao carrinho!")
-         valorTotal <- valorTotal+(CopoDaFelicidade*quantidade)
-         escreval("Subtotal: ",valorTotal)
+         nomedoproduto <- "Copo(s) da Felicidade"
+         adicionarAoCarrinho(CopoDaFelicidade)
       caso "4"
-         escreval("Quantos Docinhos gostaria de comprar?")
-         leia(quantidade)
-         escreva("Você adicionou ",quantidade)
-         escreval(" Docinho(s) ao carrinho!")
-         valorTotal <- valorTotal+(Docinho*quantidade)
-         escreval("Subtotal: ",valorTotal)
+         nomedoproduto <- "Docinho(s)"
+         adicionarAoCarrinho(Docinho)
       caso "5"
-         escreval("Quantos Pudins gostaria de comprar?")
-         leia(quantidade)
-         escreva("Você adicionou ",quantidade)
-         escreval(" Pudim(ns) ao carrinho!")
-         valorTotal <- valorTotal+(Pudim*quantidade)
-         escreval("Subtotal: ",valorTotal)
+         nomedoproduto <- "Pudim(ns)"
+         adicionarAoCarrinho(Pudim)
       caso "6"
          escreval("Compra Cancelada!")
       caso "7"
          escreval("Total da Compra: R$",valorTotal)
       outrocaso
          escreval("Opção Inválida!")
-   quantidade <- 0
+   fimescolha
+
 
 Fimalgoritmo
