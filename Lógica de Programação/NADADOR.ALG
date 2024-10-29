@@ -6,18 +6,26 @@ Var
 idade : inteiro
 procedimento Nadador(idade : inteiro)
    inicio
-      se (idade < 5)entao
-         escreval("Idade insuficiente.")
-      senao (idade >= 5 e idade <=7)
-         escreval("Classificado(a) para Infantil A!")
-      senao (idade>=8 e idade <=11)
-         escreval("Classificado(a) para Infantil B!")
-      senao (idade>=12 e idade<=13)
-         escreval("Classificado(a) para Juvenil A!")
-      senao (idade>=14 e idade<=17)
-         escreval("Classificado(a) para Juvenil B!")
-      senao (idade>=18)
-         escreval("Classificado(a) para Adultos!")
+      se (idade > 18)entao
+         escreval("Classificado(a) para a categoria Adultos!")
+      senao
+         se (idade >= 14)entao
+            escreval("Classificado(a) para a categoria Juvenil B!")
+         senao
+            se(idade >= 12) entao
+               escreval("Classificado(a) para a categoria Juvenil A!")
+            senao
+               se(idade >=8) entao
+                  escreval("Classificado(a) para a categoria Infantil B!")
+               senao
+                  se(idade >=5) entao
+                     escreval("Classificado(a) para a categoria Infantil A!")
+                  senao
+                     escreval("Idade Insuficiente para qualquer categoria.")
+                  fimse
+               fimse
+            fimse
+         fimse
       fimse
 fimprocedimento
 
