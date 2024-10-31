@@ -11,9 +11,6 @@ Inicio
 para i de 1 até 3 faca
    escreval("Digite o nome da ", i, "° mercadoria:")
    leia (NomeMercadoria[i])
-   limpatela()
-fimpara
-para i de 1 até 3 faca
    escreval("Digite o valor do ", NomeMercadoria[i], ":")
    leia (Valor[i])
    ValorTotal <- ValorTotal + Valor[i]
