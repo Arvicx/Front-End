@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Aula 2</title>
+    <!-- Método 1 - link (puxa arquivo externo) -->
+    <!-- Método 2 - tag style (puxa tag para abrir um espaço)-->
+    <!-- Método 3 - atributo style (puxa atributo direto no elemento) -->
+    <!-- para projetos mais complexos, com necessidade de mais estilização, criar um arquivo .css, estilizar e depois linkar na head com link css -->
+    <link rel="stylesheet" href="estilo.css">
+    <!-- caso crie uma classe, faça no head e abra um <style> -->
+    <style>
+        /* usar . para criar uma classe pra chamar depois no código */
+        .paragrafo {
+            /* color - cor da fonte */
+            color: rgb(0, 0, 0);
+            /* font family - tipografia (fontes) */
+            font-family: Georgia, 'Times New Roman', Times, serif;
+            /* background color - cor de fundo */
+            background-color: rgb(233, 160, 247);
+        }
+        
+        h1{
+            color: rgb(0, 0, 0);
+            /* text align - alinha o bloco de texto */
+            text-align: center;
+            /* margin - margem externa */
+            margin: 20px;
+            /* padding - margem interna */
+            padding: 20px;
+            /* border - borda (largura, tipo, cor) */
+            border: 1px solid black;
+        }
+
+        #destacado{
+            background-color: rgb(148, 218, 225);
+        }
+
+        body{
+            background-color: rgb(232, 165, 233);
+        }
+    </style>
+</head>
+<body>
+    <h1 id="destacado">Twenty one Pilots</h1>
+    <p class="paragrafo">Lorem ipsum dolor sit amet consectetur adipisicing elit. Odit rerum animi quam optio rem, at molestiae omnis nam consequuntur beatae, iusto adipisci reprehenderit minus nisi quia voluptas illo est fuga!</p>
+
+    <h1>Título 2</h1>
+    <h2>Subtitulo</h2>
+    <p class="paragrafo" >Lorem ipsum dolor sit, amet consectetur adipisicing elit. Itaque asperiores, libero nihil optio tempora voluptatibus modi ratione, eligendi nemo laudantium officia possimus nobis, quos tenetur harum consequuntur similique dolorum est.</p>
+
+    <img src="sai.jpg" alt="Imagem Promocional do álbum Scaled and Icy">
+</body>
+</html>
