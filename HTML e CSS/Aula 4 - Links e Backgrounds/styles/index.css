@@ -20,6 +20,7 @@ nav a{
 
 header h2{
     margin-left: 20px;
+    display: flex;
 }
 
 #banner{
@@ -36,4 +37,20 @@ header h2{
 footer{
     position: absolute;
     bottom: 0%;
+}
+
+#titulo{
+    line-height: 50px;
+    margin: 20px;
+    font-size: large;
+}
+
+#logo{
+    width: 5%;
+    display: flex;
+}
+
+img{
+    width: 20%;
+    display: flex;
 }
