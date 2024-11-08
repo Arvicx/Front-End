@@ -1,0 +1,56 @@
+*{
+    margin: 0%;
+    padding: 0%;
+}
+
+header, footer{
+    width: 100%;
+    padding: 20px 0px;
+    background-color: rgb(21, 52, 156);
+    color: rgb(255, 255, 255);
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+}
+
+nav a{
+    float: right;
+    margin-right: 20px;
+    color: white;
+    text-decoration: none;
+}
+
+header h2{
+    margin-left: 20px;
+    display: flex;
+}
+
+#banner{
+    width: 80%;
+    height: 500px;
+    background-image: url(../images/Irlanda.jpg);
+    background-size: cover;
+    background-position: center;
+    margin: 20px auto;
+    text-align: center;
+    line-height: 20px;
+}
+
+footer{
+    position: absolute;
+    bottom: 0%;
+}
+
+#titulo{
+    line-height: 50px;
+    margin: 20px;
+    font-size: large;
+}
+
+#logo{
+    width: 5%;
+    display: flex;
+}
+
+img{
+    width: 20%;
+    display: flex;
+}

@@ -1,0 +1,11 @@
+h2{
+    color: rgb(0, 0, 0);
+    font-size: 4pt;
+}
+
+img{
+    width: 600px;
+    height: auto;
+    border-radius: 100px;
+    border: 1px solid black;
+}
