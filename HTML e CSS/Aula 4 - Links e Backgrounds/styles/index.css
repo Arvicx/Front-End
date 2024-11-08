@@ -1,6 +1,7 @@
 *{
     margin: 0%;
     padding: 0%;
+    font-family: "Raleway", sans-serif;
 }
 
 header, footer{
@@ -54,9 +55,31 @@ footer{
 }
 
 #logo{
-    width: 5%;
+    width: 7%;
 }
 
-img{
+#imagem{
     width: 20%;
+}
+
+.produto{
+    width: 200px;
+    padding: 10px;
+    border-radius: 5px;
+    display: flex;
+    flex-direction: column;
+    align-items: center; 
+    gap: 10px;
+    background-color: rgb(159, 177, 238);
+}
+
+#catalogo{
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    gap: 40px;
+}
+
+.produto img{
+    width: 100%;
 }
