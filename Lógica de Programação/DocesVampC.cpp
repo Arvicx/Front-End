@@ -3,7 +3,7 @@
 #include <locale.h>
 
 //Montando Constantes
-#define Trufa 8,00
+#define Trufa 8.00
 #define BoloNoPote 10.00
 #define CopoDaFelicidade 15.00
 #define Docinho 3.00
