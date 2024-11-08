@@ -8,6 +8,9 @@ header, footer{
     padding: 20px 0px;
     background-color: rgb(21, 52, 156);
     color: rgb(255, 255, 255);
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
     font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
 }
 
@@ -34,12 +37,17 @@ header h2{
     line-height: 20px;
 }
 
+#marca{
+    display: flex;
+    line-height: 100px;
+}
+
 footer{
     position: absolute;
     bottom: 0%;
 }
 
-#titulo{
+#titulo h1{
     line-height: 50px;
     margin: 20px;
     font-size: large;
@@ -47,10 +55,8 @@ footer{
 
 #logo{
     width: 5%;
-    display: flex;
 }
 
 img{
     width: 20%;
-    display: flex;
 }
