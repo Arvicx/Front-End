@@ -1,0 +1,38 @@
+
+main{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+main > div, section{
+    height: auto;
+    margin: 10px 0px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+#resultados{
+    display: flex;
+    flex-direction: row;
+    gap: 20px;
+    flex-wrap: wrap;
+}
+
+#resultados img{
+    width: 200px;
+    border-radius: 5px;
+}
+
+#resultado{
+    width: 250px;
+    border-radius: 10px;
+    background-color: rgb(1, 14, 56);
+    color: white;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}

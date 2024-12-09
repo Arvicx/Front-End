@@ -1,4 +1,6 @@
-function buscaAlfabetica(letra){
+function buscaAlfabetica(){
+    letra = document.querySelector("#opcoesAlfabeticas").value
+
     document.querySelector('#resultados').innerHTML = ""
     fetch(`https://www.thecocktaildb.com/api/json/v1/1/search.php?f=${letra}`).then((response) =>
         {
@@ -9,8 +11,10 @@ function buscaAlfabetica(letra){
         
             listaDrinks.forEach(drink => {
                 document.querySelector('#resultados').innerHTML += `
-                <img src="${drink.strDrinkThumb}">
-                <h3>${drink.strDrink}</h3>
+                <div id="resultado">
+                    <img src="${drink.strDrinkThumb}">
+                    <h3>${drink.strDrink}</h3>
+                </div>
             `
             });
         
@@ -29,9 +33,11 @@ function buscaAleatoria(){
         
             listaDrinks.forEach(drink => {
                 document.querySelector('#resultados').innerHTML += `
-                <img src="${drink.strDrinkThumb}">
-                <h3>${drink.strDrink}</h3>
-            `
+                <div id="resultado">
+                    <img src="${drink.strDrinkThumb}">
+                    <h3>${drink.strDrink}</h3>
+                </div>
+                `
             });
         
             
@@ -51,8 +57,10 @@ function buscaEspecifica(){
         
             listaDrinks.forEach(drink => {
                 document.querySelector('#resultados').innerHTML += `
-                <img src="${drink.strDrinkThumb}">
-                <h3>${drink.strDrink}</h3>
+                <div id="resultado">
+                    <img src="${drink.strDrinkThumb}">
+                    <h3>${drink.strDrink}</h3>
+                </div>
             `
             });
         
