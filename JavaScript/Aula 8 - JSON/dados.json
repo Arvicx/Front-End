@@ -1,0 +1,27 @@
+{
+    "usuarios" : [
+        {
+            "id" : "0",
+            "nome" : "Arthur",
+            "cpf" : "023.293.291-32",
+            "senha" : "1234",
+            "endereço" : "Rua 4 Lote 23 Unidade 10 Alameda São Petersburgo"
+        },
+        {
+            "id" : "1",
+            "nome" : "Wildiane",
+            "cpf" : "132.231.482-21",
+            "senha" : "1031",
+            "endereço" : "Avenida Lopes Quadra 29 Casa 4 Jardim Monarca"
+            
+        },
+        {
+            "id" : "2",
+            "nome" : "Otho",
+            "cpf" : "220.231.542-56",
+            "senha" : "3102",
+            "endereço" : "Rua 20 Lote 6 Quadra 6 Parque Norte"
+
+        }
+    ]
+}

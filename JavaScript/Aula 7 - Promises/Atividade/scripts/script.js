@@ -35,7 +35,7 @@ const receitas = {
 
 
 
-Function escolherItem(){
+function escolherItem(){
     document.querySelector('body'.innerHTML += `
         
         <h3>Escolha uma das nossas categorias!</h3>
@@ -43,7 +43,7 @@ Function escolherItem(){
         <h5>2. Salgados</h5>
         <h5>3. Sucos</h5>
 
-        
+
         
      `)
 }
