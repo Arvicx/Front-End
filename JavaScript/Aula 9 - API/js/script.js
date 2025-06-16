@@ -1,5 +1,5 @@
 api = "https://pokeapi.co/api/v2/";
-endpoint = "pokemon";
+endpoint = "pokemon?limit=100";
 
 consulta = api + endpoint;
 
